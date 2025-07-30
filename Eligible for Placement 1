@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String st=sc.nextLine();
+        int arr=sc.nextInt();
+        int cgp=sc.nextInt();
+        System.out.println("Name of the Student:"+st);
+        if(arr==1 && cgp>75){
+            
+            System.out.println(st+" is Eligible for Placement");
+        }
+        else if(arr==1 && cgp>70){
+            
+            System.out.println(st+" is Eligible for Placement");
+        }
+        else if(arr==2 && cgp>75){
+           
+            System.out.println(st+" is Eligible for Placement");
+        }
+        else{
+            
+            System.out.println(st+" is Not Eligible for Placement");
+        }
+        
