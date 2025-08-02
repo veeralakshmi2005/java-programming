@@ -1,0 +1,23 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+        public static void printNatural(int current, int n) {
+        if (current > n) {
+            return;
+        }
+        System.out.print(current + " ");
+        printNatural(current + 1, n);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        if (n >= 1 && n <= 50) {
+            System.out.println("The first " + n + " Natural Numbers are:");
+            printNatural(1, n);
+        } else {
+            System.out.println("Enter a Valid Input!!!!!!!!!!!!!!!!!!!!!!!!");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
