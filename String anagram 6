@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String str1 = scanner.nextLine();
+        String str2 = scanner.nextLine();
+        str1 = str1.replaceAll("\\s", "").toLowerCase();
+        str2 = str2.replaceAll("\\s", "").toLowerCase();
+        if (str1.length() != str2.length()) {
+            System.out.println("The given strings are not an anagram");
+        } else {
+            char[] arr1 = str1.toCharArray();
+            char[] arr2 = str2.toCharArray();
+            Arrays.sort(arr1);
+            Arrays.sort(arr2);
+            if (Arrays.equals(arr1, arr2)) {
+                System.out.println("The given strings are an anagram");
+            } else {
+                System.out.println("The given strings are not an anagram");
+            }
+        }
+
+      
+
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
