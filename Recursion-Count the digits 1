@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static int countDigits(int n) {
+        if (n == 0)
+            return 0;
+        else
+            return 1 + countDigits(n / 10);
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int number = sc.nextInt();
+        if (number == 0) {
+            System.out.println("The Count the digits: 1");
+        } else {
+            int count = countDigits(Math.abs(number)); 
+            System.out.println("The Count the digits: " + count);
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
